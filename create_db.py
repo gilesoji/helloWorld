@@ -17,14 +17,14 @@ with app.app_context():
 
     # Initial loading of users
     users = [
-        {'username': 'student', 'email': 'student@umd.edu', 'first_name':'Imma', 'last_name':'Student',
-            'password': generate_password_hash('studentpw', method='sha256'), 'role':'STUDENT'},
-        {'username': 'manager', 'email': 'manager@umd.edu', 'first_name':'Joe', 'last_name':'King',
-            'password': generate_password_hash('managerpw', method='sha256'), 'role':'MANAGER'},
-        {'username': 'admin', 'email': 'admin@umd.edu', 'first_name':'Crystal', 'last_name':'Ball',
-            'password': generate_password_hash('adminpw', method='sha256'), 'role':'ADMIN'},
+        {'username': 'student', 'email': 'student@umd.edu', 'first_name': 'Imma', 'last_name': 'Student',
+         'password': generate_password_hash('studentpw', method='sha256'), 'role': 'STUDENT'},
+        {'username': 'manager', 'email': 'manager@umd.edu', 'first_name': 'Joe', 'last_name': 'King',
+         'password': generate_password_hash('managerpw', method='sha256'), 'role': 'MANAGER'},
+        {'username': 'admin', 'email': 'admin@umd.edu', 'first_name': 'Crystal', 'last_name': 'Ball',
+         'password': generate_password_hash('adminpw', method='sha256'), 'role': 'ADMIN'},
         {'username': 'goji', 'email': 'goji@terpmail.umd', 'first_name': 'Giles', 'last_name': 'Oji',
-         'password': generate_password_hash('gojipw', method='sha256'), 'role':'STUDENT'}
+         'password': generate_password_hash('gojipw', method='sha256'), 'role': 'STUDENT'}
     ]
 
     for each_user in users:
